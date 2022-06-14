@@ -13,7 +13,7 @@ namespace VShop.Web.Services
         private ProductViewModel productVM;
         private IEnumerable<ProductViewModel> productsVM;
 
-        public ProductService(IHttpClientFactory clientFactory, )
+        public ProductService(IHttpClientFactory clientFactory)
         {
             this.clientFactory = clientFactory;
             options = new JsonSerializerOptions { PropertyNameCaseInsensitive = true };
